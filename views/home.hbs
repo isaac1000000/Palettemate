@@ -1,0 +1,41 @@
+<div id="add-box">
+	<div id="btn-box">
+		<button id="save-btn">Save</button>
+		<button id="add-btn">Add</button>
+		<button id="open-btn">Open All In Store</button>
+	</div>
+	<div id="saved-notif" class="notif hidden"></div>
+	<div id="add-popup" class="hidden">
+		<button id="add-popup-back-btn" class="hidden add-popup-btn"><img src="/img/svg/back.svg"></button>
+		<button id="add-popup-exit-btn" class="add-popup-btn"><img src="/img/svg/exit.svg"></button>
+		<div id="add-popup-items">
+			<button class="text-only color-btn" value="red">Red</button>
+			<button class="text-only color-btn" value="orange">Orange</button>
+			<button class="text-only color-btn" value="yellow">Yellow</button>
+			<button class="text-only color-btn" value="green">Green</button>
+			<button class="text-only color-btn" value="blue">Blue</button>
+			<button class="text-only color-btn" value="violet">Violet</button>
+			<button class="text-only color-btn" value="white">White</button>
+			<button class="text-only color-btn" value="gray">Gray</button>
+			<button class="text-only color-btn" value="brown">Brown</button>
+			<button class="text-only color-btn" value="black">Black</button>
+			<button class="text-only color-btn" value="gold">Gold</button>
+		</div>
+	</div>
+	<div id="added-notif" class="notif hidden">Paint added!</div>
+</div>
+<div id="current-palette">
+	<div id="current-palette-header">
+		<div>
+			<h3>Current Palette:&nbsp;</h3>
+			<input type="text" name="palette-name" placeholder="My Palette" id="palette-name">
+		</div>
+		<div>
+			<h3>Cost:&nbsp;</h3><span id="palette-cost">$0</span>
+		</div>
+	</div>
+	<div id="paint-box">
+	</div>
+</div>
+<button id="new-palette-btn">New Palette</button>
+<script type="text/javascript" src="/js/index.js"></script>

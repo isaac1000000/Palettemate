@@ -1,0 +1,18 @@
+<div id="profile-header">
+	<h1>Hello, {{user.username}}</h1>
+</div>
+<div id="paint-box-header" class="list-box-header">
+	<input type="text" placeholder="Search" id="paint-search-filter" name="filter">
+	<button id="add-paint-btn">Add Paint</button>
+	<a id="my-palettes-link" href="/profile/">My Palettes</a>
+</div>
+<div id="paint-box" class="list-box">
+</div>
+<div id="add-paint-popup" class="hidden">
+	<div id="add-paint-box">
+		<input type="text" placeholder="Search" id="add-search-filter" name="filter">
+		<ul id="add-paint-list">
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="/js/mypaints.js"></script>

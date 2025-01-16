@@ -1,0 +1,247 @@
+:root {
+	--add-popup-button-height: 100px;
+}
+h3 {
+	margin-right: 10px;
+}
+#palette-name {
+	margin: 3px 0;
+}
+#current-palette-header {
+	display: flex;
+	height: 10%;
+	width: 80%;
+	margin: 0 20%;
+	text-align: center;
+	justify-content: space-between;
+}
+#current-palette-header div {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	white-space: nowrap;
+}
+#current-palette-header h3, #palette-cost {
+	margin: auto 0;
+}
+#current-palette {
+	height: 75%;
+}
+#paint-box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: 85%;
+	width: 80vw;
+	margin: 0 10vw;
+	justify-content: space-evenly;
+	overflow-y: auto;
+	border: var(--border-thickness) solid var(--border-color);
+	border-radius: var(--border-radius);
+	background-color: white;
+}
+.paint {
+	height: 120px;
+	width: 231px;
+	margin: 20px;
+	position: relative;
+	z-index: 8;
+}
+.paint-info {
+	padding: 3%;
+	font-size: 12px;
+	white-space: wrap;
+	height: 94%;
+	width: 94%;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+#add-box {
+	width: 100%;
+	padding-top: 2%;
+	height: 15%;
+	text-align: center;
+	position: relative;
+}
+#btn-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#save-btn {
+	height: 25px;
+	margin-left: 25%;
+	flex: 1;
+}
+#add-btn {
+	height: 75px;
+	width: 150px;
+	font-size: 2rem;
+	flex: 1;
+}
+#open-btn {
+	height: 25px;
+	margin-right: 25%;
+	flex: 1;
+}
+#add-popup {
+	position: fixed;
+	z-index: 10;
+	top: 20%;
+	left: 20%;
+	width: 60%;
+	height: 60%;
+	border: var(--border-thickness) solid var(--border-color);
+	border-radius: var(--border-radius);
+	background-color: var(--palette-bg-color);
+	overflow-y: scroll;
+
+}
+.add-popup-btn {
+	display: block;
+	position: sticky;
+	height: 50px;
+	width: 50px;
+	top: 0px;
+	margin-top: -50px;
+	z-index: 11;
+	border-radius: var(--border-radius);
+	background-color: var(--nav-bar-color);
+	border: none;
+
+}
+#add-popup-back-btn {
+
+
+}
+#add-popup-exit-btn {
+	margin-left: auto;
+}
+.add-popup-btn:hover {
+	filter: brightness(300%);
+}
+.add-popup-btn img {
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+#add-popup-items {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#add-popup-items button, #add-popup-items input[type="button"] {
+	height: var(--add-popup-button-height);
+	min-height: var(--add-popup-button-height);
+	width: 100%;
+	position: relative;
+	z-index: 10;
+}
+#add-popup-items button:not(.paint-btn):hover {
+	filter: brightness(85%);
+}
+button.text-only {
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+}
+.paint-btn {
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+.paint-del-btn {
+	width: 25px;
+	height: 25px;
+	z-index: 9;
+	position: absolute;
+	right: -17px;
+	top: -10px;
+	border: none;
+	background-color: var(--accent-color);
+	border-radius: 100px;
+}
+.paint-del-btn img {
+	width: inherit;
+	height: inherit;
+}
+.paint-del-btn:hover {
+	filter: brightness(300%);
+}
+.swatch {
+	overflow: clip;
+	height: inherit;
+	width: inherit;
+	border: var(--border-thickness) solid var(--border-color);
+	border-radius: var(--border-radius);
+}
+.swatch-img {
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+}
+.paint-btn-name {
+	margin: 0 auto;
+	background-color: var(--main-bg-color);
+	padding: 1px 3px;
+	border-radius: var(--border-radius);
+	color: var(--main-text-color);
+}
+.paint-info-box.hidden {
+	display: none;
+}
+.paint-info-box {
+	background-color: var(--palette-bg-color);
+	color: var(--palette-text-color);
+	display: block;
+	overflow: clip;
+	height: inherit;
+	width: inherit;
+	border: var(--border-thickness) solid var(--border-color);
+	border-radius: var(--border-radius);
+	overflow-y: auto;
+}
+.paint-btn-info.hidden {
+	width: 0%;
+	display: block !important;
+	opacity: 0;
+}
+.paint-btn-info {
+	display: block;
+	background-color: var(--palette-bg-color);
+	color: var(--palette-text-color);
+	width: 50%;
+	height: 100%;
+	opacity: 1;
+	transition: width .5s;
+	overflow: hidden;
+}
+#new-palette-btn {
+	height: 3%;
+	width: 60%;
+	margin: 0 20%;
+}
+.notif {
+	position: fixed;
+	width: 20vw;
+	height: auto;
+	left: 40vw;
+	bottom: 20%;
+	font-size: 20px;
+	border: var(--border-thickness) solid var(--border-color);
+	border-radius: var(--border-radius);
+	background-color: var(--palette-bg-color);
+	text-align: center;
+	z-index: 100;
+	transition: bottom .5s;
+}
+.notif.hidden {
+	display: block !important;
+	bottom: -20%;
+}

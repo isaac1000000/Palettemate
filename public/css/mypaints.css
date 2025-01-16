@@ -1,0 +1,47 @@
+#paint-list {
+	margin: 0 5%;
+}
+.paint-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: 50px;
+}
+.paint-row > * {
+	flex-basis: 100%;
+	text-align: center;
+	margin: 0;
+}
+#add-paint-popup {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	backdrop-filter: var(--popup-bg-filter);
+	z-index: 99;
+}
+#add-paint-box {
+	height: 80vh;
+	width: 60vw;
+	position: relative;
+	margin: 10vh auto;
+	background-color: white;
+	border: var(--border-thickness) solid var(--border-color);
+	border-radius: var(--border-radius);
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 100;
+}
+#add-paint-list {
+	width: 100%;
+	padding: 0;
+}
+#add-paint-list tr {
+	display: flex;
+	border: 1px solid black;
+}
+#add-paint-list td {
+	text-align: center;
+	flex-basis: 100%;
+}

@@ -1,0 +1,7 @@
+<form method="POST" action="/login">
+	Username or Email: <input type="text" name="identifier">
+	Password: <input type="text" name="password">
+	<input type="submit">
+	<a id="register-link" href="/register">Register</a>
+</form>
+{{#if failure}}<div id="error-message">Authentication failed: check username and password</div>{{/if}}

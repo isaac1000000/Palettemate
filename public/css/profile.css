@@ -1,0 +1,17 @@
+#palette-col-headers {
+	position: sticky;
+}
+.palette-row {
+	display: flex;
+	height: 50px;
+	min-height: 50px;
+	justify-content: space-evenly;
+}
+.palette-row > * {
+	width: 20%;
+	text-align: center;
+}
+.palette-row p {
+	margin: 0;
+}
+
